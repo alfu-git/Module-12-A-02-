@@ -1,0 +1,32 @@
+/* shared style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+html{
+  font-size: 10px;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
