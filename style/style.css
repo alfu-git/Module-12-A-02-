@@ -26,7 +26,7 @@ a{
 
 img, video{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .container{
@@ -83,14 +83,14 @@ nav .nav-content{
 .nav-content .menu-div span.btn a{
   font-size: 1.6rem;
   background: linear-gradient(to right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
-  padding: 10px 10px;
+  padding: 8px 12px;
   border-radius: 20px;
-  transition: transform 3s ease-in-out, background 3s ease-in-out
+  transition: transform 3s ease-in-out
 }
 
 .nav-content .menu-div span.btn a:hover{
   display: inline-block;
-  transform: scale(1.03);
+  transform: scale(1.1);
   background: linear-gradient(to left, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
 }
 
@@ -147,5 +147,130 @@ nav .nav-content{
   .nav-content .menu-div #hamburger i{
   display: block;
   font-size: 2.5rem;
+}
+}
+
+/* hero section */
+section.hero{
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hero-content{
+  padding: 100px 0;
+}
+
+.hero-content .hc-img{
+  background-image: url(../images/hero-circle.png);
+  background-size: 100% 100%;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content .hc-img:hover{
+  border: 1px solid #FB09B4;
+}
+
+.hero-content .hc-img img{
+  width: 105px;
+  height: 165px;
+}
+
+.hero-content .hc-img:hover img{
+  filter: drop-shadow(0 0px 20px #ffffff9e);
+}
+
+.hero-content .hc-img #hc-img-badge{
+  position: absolute;
+  display: block;
+  color: #1A0B2E;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #00FF88;
+  box-shadow: 0 0 20px 0 #00FF88;
+  padding: 5px 12px;
+  border-radius: 20px;
+  top: 4%;
+  right: 7%;
+}
+
+.hero-content .hc-img #hc-img-badge:hover{
+  color: #FB09B4;
+  background-color: #F7E93F;
+}
+
+.hero-content .hc-dt h1{
+  margin-top: 3rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hero-content .hc-dt p{
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.hero-content .hc-dt .hc-dt-btn span{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.hero-content .hc-dt .hc-dt-btn span .btn-1{
+    font-size: 1.6rem;
+    background: linear-gradient(to right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    padding: 7px 14px;
+    border-radius: 20px;
+}
+
+.hero-content .hc-dt .hc-dt-btn span .btn-1:hover{
+  background: linear-gradient(to left, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+.hero-content .hc-dt .hc-dt-btn span .btn-2{
+  color: #00FF88;
+  font-size: 1.6rem;
+  padding: 7px 14px;
+  border: 1px solid #00FF88;
+  border-radius: 20px;
+}
+
+.hero-content .hc-dt .hc-dt-btn span .btn-2:hover{
+  color: #FB09B4;
+  border: 1px solid #FB09B4;
+}
+
+@media screen and (max-width: 576px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  section.hero{
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .hero-content{
+  padding: 60px 0;
+}
+
+.hero-content .hc-img{
+  background-size: 100%;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+
+.hero-content .hc-img img{
+  width: 55px;
+  height: 80px;
 }
 }
