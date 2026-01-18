@@ -8,7 +8,12 @@
 }
 
 html{
-  font-size: 10px;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #1A0B2E;
+  color: #ffffff;
 }
 
 ul, ol{
@@ -25,8 +30,122 @@ img, video{
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
+/* main style */
+nav{
+  padding: 20px;
+  border-bottom: 1px solid #412567;
+}
+
+nav .nav-content{
+  align-items: center;
+}
+
+.nav-content div.logo{
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.nav-content div.logo #tech:hover{
+  color: #FB09B4;
+}
+
+.nav-content div.logo #wave:hover{
+  color: #9100F8;
+}
+
+.nav-content ul{
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-content ul li a{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.nav-content ul li a.yelo:hover{
+  color: #F7E93F;
+}
+
+.nav-content ul li a.pnk:hover{
+  color: #FB09B4;
+}
+
+.nav-content ul li a.prpl:hover{
+  color: #9100F8;
+}
+
+.nav-content .menu-div span.btn a{
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+  padding: 10px 10px;
+  border-radius: 20px;
+  transition: transform 3s ease-in-out, background 3s ease-in-out
+}
+
+.nav-content .menu-div span.btn a:hover{
+  display: inline-block;
+  transform: scale(1.03);
+  background: linear-gradient(to left, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+.nav-content .menu-div #hamburger i{
+  display: none;
+}
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  .nav-content ul{
+    display: none;
+  }
+
+  .nav-content .menu-div span.btn{
+    display: none;
+  }
+
+  .nav-content .menu-div #hamburger i{
+  display: block;
+  font-size: 2.5rem;
+}
+}
+
+/* tablet device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav-content ul{
+    display: none;
+  }
+
+  .nav-content .menu-div span.btn{
+    display: none;
+  }
+
+  .nav-content .menu-div #hamburger i{
+  display: block;
+  font-size: 2.5rem;
+}
+}
+
+/* laptop device */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .nav-content ul{
+    display: none;
+  }
+
+  .nav-content .menu-div span.btn{
+    display: none;
+  }
+
+  .nav-content .menu-div #hamburger i{
+  display: block;
+  font-size: 2.5rem;
+}
+}
