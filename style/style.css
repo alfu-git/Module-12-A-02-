@@ -54,6 +54,10 @@ nav .nav-content{
   color: #FB09B4;
 }
 
+.nav-content div.logo #wave{
+  color: #F7E93F;
+}
+
 .nav-content div.logo #wave:hover{
   color: #9100F8;
 }
@@ -119,7 +123,7 @@ nav .nav-content{
 }
 
 /* tablet device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .nav-content ul{
     display: none;
   }
@@ -135,7 +139,7 @@ nav .nav-content{
 }
 
 /* laptop device */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .nav-content ul{
     display: none;
   }
@@ -212,7 +216,7 @@ section.hero{
   font-weight: 700;
 }
 
-.hero-content .hc-dt p{
+.hero-content .hc-dt .hc-dt-p{
   font-size: 1.6rem;
   font-weight: 200;
   margin-bottom: 2rem;
@@ -247,6 +251,7 @@ section.hero{
   border: 1px solid #FB09B4;
 }
 
+/* mobile device */
 @media screen and (max-width: 576px) {
   html{
     font-size: 56.25%;
@@ -255,7 +260,7 @@ section.hero{
   section.hero{
     background-image: url(../images/hero-bg.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
   }
 
   .hero-content{
@@ -272,5 +277,203 @@ section.hero{
 .hero-content .hc-img img{
   width: 55px;
   height: 80px;
+}
+
+.hero-content .hc-dt p{
+  padding: 0 90px;
+}
+}
+
+/* about section */
+section.about{
+  margin: 40px 0;
+}
+
+.about-content h2{
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.about-content .ab-cn-p1{
+  margin-bottom: 2rem;
+  padding: 0 250px;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+
+.about-content .ab-cn-p2{
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.about-content .ab-cn-dt{
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin-top: 5rem;
+  padding: 4rem 0;
+  border-top: 1px solid #412567;
+}
+
+.about-content .ab-cn-dt h3{
+  margin-bottom: 0.5rem;
+  color: #00FF88;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.about-content .ab-cn-dt h4{
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  section.about{
+  margin: 20px 0;
+}
+
+  .about-content .ab-cn-p1{
+    padding: 0 ;
+    line-height: normal;
+}
+
+  .about-content .ab-cn-p2{
+    padding: 0;
+}
+
+.about-content .ab-cn-dt{
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+}
+}
+
+/* tablet device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  .about-content .ab-cn-p1{
+    padding: 0 80px;
+}
+}
+
+/* laptop device */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  .about-content .ab-cn-p1{
+    padding: 0 60px;
+}
+}
+
+/* choose section */
+section.choose{
+  padding: 8rem 0;
+  background-color: rgba(53, 17, 101, 0.4);
+}
+
+.choose-content h2{
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.choose-content .ch-cn-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+}
+
+.choose-content .ch-cn-grid .rowspan{
+  grid-row: span 2;
+}
+
+.choose-content .ch-cn-grid .colspan{
+  grid-column: span 2;
+}
+
+.choose-content .ch-cn-grid div{
+  background-color: #351165;
+  border-radius: 15px;
+  padding: 2.4rem;
+  align-content: center;
+}
+
+.choose-content .ch-cn-grid div:hover{
+  border: 1px solid #00FF88;
+}
+
+.choose-content .ch-cn-grid div:hover h3{
+  color: #F7E93F;
+}
+
+.choose-content .ch-cn-grid div img{
+  width: 60px;
+  height: 60px;
+}
+
+.choose-content .ch-cn-grid div h3{
+  margin: 1.2rem 0 0.8rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.choose-content .ch-cn-grid div p{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  section.choose{
+  padding: 4rem 0;
+}
+
+  .choose-content .ch-cn-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .choose-content .ch-cn-grid .rowspan{
+  grid-row: span 1;
+}
+
+.choose-content .ch-cn-grid .colspan{
+  grid-column: span 1;
+}
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  html{
+    font-size: 56.25%;
+  }
+
+  section.choose{
+  padding: 6rem 0;
+}
+
+  .choose-content .ch-cn-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .choose-content .ch-cn-grid .rowspan{
+  grid-row: span 1;
+}
+
+.choose-content .ch-cn-grid .colspan{
+  grid-column: span 1;
 }
 }
